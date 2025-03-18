@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+}
+
+header{
+  background-color: #ffff;
+  padding: 1.5vw;
+  margin: 0;
+}
+
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo{
+  size: 100%;
+}
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5vw;
+}
+
+.menu a{
+  margin: 0 0.5vw;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5vw;
+}
+
+.menu a:hover{
+  color:rgb(97, 97, 232);
+}
+
+.formula-student,.static-events{
+  display: flex;
+  align-items: center;
+  padding: 2vw 1.5vw;
+  margin: 0 auto;
+  gap: 2vw;
+  font-family: Arial, sans-serif;
+  background-color: rgb(97, 97, 232);
+  width: 100%;
+}
+
+.team-photo{
+    width: 50%;
+    order:2;
+    border: 2px solid rgb(97, 97, 232);
+}
+
+.dynamic-events{
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2vw 1.5vw;
+    margin: 0 auto;
+    gap: 2vw;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    width: 100%;
+}
+
+.info-image{
+    width: 50%;
+    border: 2px solid rgb(97, 97, 232);
+}
+
+.info-text{
+    width: 50%;
+    text-align: left;
+}
+
+.info-text h3{
+    padding: 1vw;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info-text p{
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    margin-left: 0.5vw;
+    padding: 1vw;
+}
+
+.info-text ul{
+    padding: 2vw;
+    font-size: 1.5vw;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 2vw;
+  text-align: center;
+}
+
+.footer-menu{
+  display:flex;
+  justify-content: center;
+  gap:1.5vw;
+  margin-bottom: 1vw;
+  align-content: stretch;
+  align-items: center;
+}
+
+.social-media{
+  display:flex;
+  justify-content: center;
+  gap:1.5vw;
+  margin-bottom: 1vw;
+  align-content: stretch;
+  align-items: center;
+}
+
+.social-media img{
+  width: 80%;
+}
+
+.footer-menu a, .social-media a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+
+.footer-menu a:hover, .social-media a:hover {
+  color: rgb(97, 97, 232);
+}
+
+footer p {
+  font-size: 1.5vw;
+  opacity: 0.8;
+}
+
+  @media screen and (max-width: 768px){
+    .info-image, .team-photo{
+      float: left;
+      margin: 1vw;
+      height: auto;
+      width: 30%;
+    }
+
+    .formula-student, .static-events{
+      text-align: right;
+      margin-right: 0 1.5vw;
+    }
+
+    .dynamic-events{
+      text-align: left;
+      margin-left: 0 1.5vw;
+    }
+
+    .logo{
+      width: 2%;
+    }
+
+    .footer-menu{
+      flex-direction: column;
+    }
+
+    .social-media img{
+      width: 25%;
+    }
+  }
+  

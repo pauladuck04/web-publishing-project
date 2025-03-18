@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+}
+
+header{
+  background-color: #ffff;
+  padding: 1.5vw;
+  margin: 0;
+}
+
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo{
+  size: 100%;
+}
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5vw;
+}
+
+.menu a{
+  margin: 0 0.5vw;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5vw;
+}
+
+.menu a:hover{
+  color:rgb(97, 97, 232);
+}
+
+.main {
+    text-align: center;
+    padding: 4vw 2vw;
+    background-color: rgb(97, 97, 232);
+  }
+  
+  .title {
+    font-size: 2vw;
+    font-weight: bold;
+    margin-bottom: 2vw;
+    text-transform: uppercase;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+    justify-items: center;
+  }
+  
+  .grid-item {
+    background-color: white;
+    padding: 2vw;
+    border-radius: 8px;
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .grid-item h2 {
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+  }
+  
+  .grid-item img {
+    display: block;
+    margin: 0 auto 1vw;
+    width: 15vw;
+    height: 10vw;
+    background-color: gray;
+    object-fit: cover;
+    border-radius: 1vw;
+  }
+  
+  .grid-item p {
+    font-size: 1vw;
+    color: black;
+  }
+
+  footer{
+    background-color: black;
+    color: white;
+    padding: 2vw;
+    text-align: center;
+  }
+  
+  .footer-menu{
+    display:flex;
+    justify-content: center;
+    gap:1.5vw;
+    margin-bottom: 1vw;
+    align-content: stretch;
+    align-items: center;
+  }
+
+  .social-media{
+    display:flex;
+    justify-content: center;
+    gap:1.5vw;
+    margin-bottom: 1vw;
+    align-content: stretch;
+    align-items: center;
+  }
+
+  .social-media img{
+    width: 80%;
+  }
+  
+  .footer-menu a, .social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5vw;
+  }
+  
+  .footer-menu a:hover, .social-media a:hover {
+    color: rgb(97, 97, 232);
+  }
+  
+  footer p {
+    font-size: 1.5vw;
+    opacity: 0.8;
+  }
+   
+  @media (max-width: 768px) {
+    .footer-menu{
+      flex-direction: column;
+    }
+    
+    .social-media img{
+      width: 25%;
+    }
+
+    .logo{
+      width: 2%;
+    }
+  }

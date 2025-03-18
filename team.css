@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+}
+
+header{
+  background-color: #ffff;
+  padding: 1.5vw;
+  margin: 0;
+}
+
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo{
+  size: 100%;
+}
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5vw;
+}
+
+.menu a{
+  margin: 0 0.5vw;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5vw;
+}
+
+.menu a:hover{
+  color:rgb(97, 97, 232);
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: rgb(97, 97, 232);
+}
+
+.team-title{
+    font-size: 2vw;
+    font-weight: bold;
+    color: black;
+    padding: 1vw 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1vw;
+    justify-content: center;
+}
+
+.team-member {
+    margin-top: 1vw;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1vw;
+    width: 20%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-member h2 {
+    font-size: 1.5vw;
+    margin: 0.5rem 0;
+    color: rgb(97, 97, 232);
+}
+
+.team-member p {
+    font-size: 1.25vw;
+    margin: 0;
+    color: black;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 2vw;
+  text-align: center;
+}
+
+.footer-menu{
+  display:flex;
+  justify-content: center;
+  gap:1.5vw;
+  margin-bottom: 1vw;
+  align-content: stretch;
+  align-items: center;
+}
+
+.social-media{
+  display:flex;
+  justify-content: center;
+  gap:1.5vw;
+  margin-bottom: 1vw;
+  align-content: stretch;
+  align-items: center;
+}
+
+.social-media img{
+  width: 80%;
+}
+
+.footer-menu a, .social-media a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+
+.footer-menu a:hover, .social-media a:hover {
+  color: rgb(97, 97, 232);
+}
+
+footer p {
+  font-size: 1.5vw;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px){
+  .team{
+    gap: 1rem;
+  }
+
+  .team-member{
+    width: 30%;
+  }
+
+  .footer-menu{
+    flex-direction: column;
+  }
+    
+  .social-media img{
+    width: 25%;
+  }
+
+  .logo{
+    width: 2%;
+  }
+}
